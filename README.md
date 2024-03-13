@@ -803,11 +803,11 @@ fn it_adds_two2() {
 
 ## 参考文献
 
-[Rust Book](https://doc.rust-lang.org/book)
-[Rust-Lang](https://www.rust-lang.org/learn)
-[Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
-[Programiz Rust Tutorials](https://www.programiz.com/rust/getting-started)
-[Comprehensive Rust by Google](https://google.github.io/comprehensive-rust/)
-[freeCodeCamp.org](https://www.youtube.com/watch?v=BpPEoZW5IiY)
-[Rust 101 Crash Course: Learn Rust (6 HOURS!) + 19 Practice](https://www.youtube.com/watch?v=lzKeecy4OmQ)
-[Rust Tutorial](https://www.youtube.com/watch?v=fPk-fyP9MFM)
+- [Rust Book](https://doc.rust-lang.org/book)
+- [Rust-Lang](https://www.rust-lang.org/learn)
+- [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/)
+- [Programiz Rust Tutorials](https://www.programiz.com/rust/getting-started)
+- [Comprehensive Rust by Google](https://google.github.io/comprehensive-rust/)
+- [freeCodeCamp.org](https://www.youtube.com/watch?v=BpPEoZW5IiY)
+- [Rust 101 Crash Course: Learn Rust (6 HOURS!) + 19 Practice](https://www.youtube.com/watch?v=lzKeecy4OmQ)
+- [Rust Tutorial](https://www.youtube.com/watch?v=fPk-fyP9MFM)
