@@ -1,12 +1,23 @@
 # Rust 测试
 
----
-title: 01. Rust 测试
-tags:
-  - rust
-  - basic
-  - wtfacademy
----
+<table>
+  <tr>
+    <th>title</th>
+    <th>tags</th>
+  </tr>
+  <tr>
+    <td>01. 测试</td>
+    <td>
+      <table>
+        <tr>
+          <th>rust</th>
+          <th>basic</th>
+          <td>test</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 ## 简介
 
