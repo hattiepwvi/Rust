@@ -1,5 +1,28 @@
 # Rust 测试
 
+<table>
+  <tr>
+    <th>title</th>
+    <th>tags</th>
+  </tr>
+  <tr>
+    <td>01. 测试</td>
+    <td>
+      <table>
+        <tr>
+          <th>rust</th>
+          <th>basic</th>
+          <td>test</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+## 简介
+
+本文作者: [Eta](https://twitter.com/pwhattie)
+
 本文主要介绍了 Rust 测试的函数、命令和种类, 干货满满。
 
 - 测试函数: 测试中常用的宏、属性和枚举, 包括 `#[test]` 、`#[cfg(test)]`、 `panic!` 、`assert!` 、`assert_eq!` 、 `assert_ne!` 、`should_panic` 、`Result<T,E>` 。
