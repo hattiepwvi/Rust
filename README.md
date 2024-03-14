@@ -133,6 +133,7 @@ error: test failed
 
 - `assert!` 宏
   标准库的断言 `assert!`  宏用于检查代码, 参数为布尔值。如果值为 true, 测试通过。如果值为 false, `assert!`  会调用  `panic!`  宏, 测试失败。使用 glob 全局导入外部模块所有内容 `use super::*;`，以便在  `tests`  模块中使用所有在外部模块定义的内容。
+
   <details><summary>点我展开示例代码</summary>
 
   ```rust
@@ -221,7 +222,7 @@ error: test failed
 
   自定义信息可以作为参数传递给`assert!` 、`assert_eq!`  和  `assert_ne!` 。`String`  的大小可以增加，其内容也可以改变， 使用  `+`  运算符或  `format!`  宏来拼接  `String`  值。为测试函数增加一个自定义失败信息参数：带`{}`占位符的格式字符串，以及  `greeting`  函数的值。
 
-    <details><summary>点我展开示例代码</summary>
+  <details><summary>点我展开示例代码</summary>
 
   ```rust
   pub fn greeting(name: &str) -> String {
@@ -262,16 +263,14 @@ error: test failed
   ```
 
   ```rust
-      #[test]
-      fn smaller_cannot_hold_larger() {
-          let larger = Rectangle { width: 8, height: 7 };
-          let smaller = Rectangle { width: 5, height: 1 };
+  ---- tests::greeting_contains_name stdout ----
+  thread 'tests::greeting_contains_name' panicked at 'Greeting did not
+  contain name, value was `Hello!`', src/lib.rs:12:9
+  note: Run with `RUST_BACKTRACE=1` for a backtrace.
 
-          assert!(!smaller.can_hold(&larger));
-      }
   ```
 
-    </details>
+  </details>
 
 #### 1.2.3 `should_panic` 属性
 
@@ -779,7 +778,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 
 </details>
 
-如果, 不希望  `common`  出现在测试输出中，就需要创建  *`tests/common/mod.rs`* ，而不是创建  *`tests/common.rs`* 。*`tests`*  目录中的子目录不会被作为单独的 `crate` 编译或作为一个测试结果部分出现在测试输出中。然后, 可以将 _`tests/common/mod.rs`_ 作为模块在任何集成测试文件中使用。比如在 *`tests/integration_test.rs`*  中的  `it_adds_two`  测试, 声明模块 `mod common` , 调用  `setup`  函数 `common::setup()` 。
+如果, 不希望  `common`  出现在测试输出中，就需要创建  *`tests/common/mod.rs`* ，而不是创建  *`tests/common.rs`* 。*`tests`*  目录中的子目录不会被作为单独的 `crate` 编译或作为一个测试结果部分出现在测试输出中。然后, 可以将 _`tests/common/mod.rs`_ 作为模块在任何集成测试文件中使用。比如在 *`tests/integration_test.rs`*  中的  `it_adds_two`  测试, 声明模块 `mod common` , 调用  `setup`  函数 `common::setup()`。
 
 <details><summary>点我展开示例代码</summary>
 
