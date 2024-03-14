@@ -1,14 +1,12 @@
 # Rust 测试
 
 ---
-
-title: 1. Rust 测试
+title: 01. Rust 测试
 tags:
 
 - rust
 - basic
 - wtfacademy
-
 ---
 
 ## 简介
