@@ -4,9 +4,9 @@
 title: 01. Rust 测试
 tags:
 
-- rust
-- basic
-- wtfacademy
+  - rust
+  - basic
+  - wtfacademy
 ---
 
 ## 简介
